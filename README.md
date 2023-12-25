@@ -10,21 +10,6 @@ The hyperbolic tangent, or Tanh, activation function is commonly used in neural 
 
 \[ \tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}} \]
 
-### Code
-
-```python
-import math
-
-def hyperbolic(z):
-    x = math.exp(z) - math.exp(-z)
-    y = math.exp(z) + math.exp(-z)
-    tanh = x / y
-    return tanh
-
-# Example usage:
-result = hyperbolic(-56)  # Returns: -1.0
-
-
 Rectified Linear Unit (ReLU) Activation Function
 The Rectified Linear Unit, or ReLU, is a widely used activation function in neural networks. It introduces non-linearity by outputting the input directly if it is positive; otherwise, it returns zero. The ReLU function is defined by the formula:
 
@@ -63,3 +48,4 @@ def leaky_relu(x):
 # Example usage:
 result = leaky_relu(-100)  # Returns: -10.0
 Feel free to adjust this to fit your preferences and specific documentation style.
+
