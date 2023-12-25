@@ -2,15 +2,13 @@
 
 Create Tanh, ReLU, and Leaky ReLU activation functions in plain Python.
 
-# Activation Functions
+## Activation Functions
 
 This repository provides implementations of three popular activation functions in machine learning: Hyperbolic Tangent (Tanh), Rectified Linear Unit (ReLU), and Leaky Rectified Linear Unit (Leaky ReLU).
 
-## Hyperbolic Tangent (Tanh)
+### Hyperbolic Tangent (Tanh)
 
 The hyperbolic tangent function, or Tanh, squashes input values to the range [-1, 1]. It is often used in neural networks to introduce non-linearity and is particularly useful in scenarios where the output should be centered around zero.
-
-# Rectified Linear Unit (ReLU)
 
 def relu(x):
     """
@@ -26,14 +24,12 @@ def relu(x):
     """
     return max(0, x)
 
-# Example Usage:
+    
 result1 = relu(-100)
 print(result1)  # Output: 0
 
 result2 = relu(8)
 print(result2)  # Output: 8
-
-# Leaky Rectified Linear Unit (Leaky ReLU)
 
 def leaky_relu(x):
     """
@@ -49,30 +45,11 @@ def leaky_relu(x):
     """
     return max(0.1 * x, x)
 
-# Example Usage:
 result = leaky_relu(-100)
 print(result)  # Output: -10.0
 
 
-### Formula:
-```python
-import math
-
-def hyperbolic_tangent(z):
-    x = math.exp(z) - math.exp(-z)
-    y = math.exp(z) + math.exp(-z)
-    tanh = x / y
-    return tanh
-
-# Activation-Functions-plain-python
-
-This repository provides implementations of three popular activation functions in machine learning: Hyperbolic Tangent (Tanh), Rectified Linear Unit (ReLU), and Leaky Rectified Linear Unit (Leaky ReLU) in plain Python.
-
-## Hyperbolic Tangent (Tanh)
-
-The hyperbolic tangent function, or Tanh, squashes input values to the range [-1, 1]. It is often used in neural networks to introduce non-linearity and is particularly useful in scenarios where the output should be centered around zero.
-
-### Formula:
+#### Formula:
 
 ```python
 import math
