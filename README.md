@@ -33,6 +33,26 @@ print(result1)  # Output: 0
 result2 = relu(8)
 print(result2)  # Output: 8
 
+# Leaky Rectified Linear Unit (Leaky ReLU)
+
+def leaky_relu(x):
+    """
+    Leaky ReLU is a variant of ReLU that allows a small, non-zero gradient when the input is negative.
+    This helps mitigate the "dying ReLU" problem and can be useful in situations where some information
+    from negative values is valuable.
+
+    Parameters:
+    - x (float): Input value.
+
+    Returns:
+    float: Output of the Leaky ReLU activation function.
+    """
+    return max(0.1 * x, x)
+
+# Example Usage:
+result = leaky_relu(-100)
+print(result)  # Output: -10.0
+
 
 ### Formula:
 ```python
